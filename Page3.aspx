@@ -1,17 +1,53 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Page3.aspx.cs" Inherits="Contact" %>
+﻿<%@ Page Title="Page 3" Language="C#" AutoEventWireup="true" CodeFile="Page3.aspx.cs" Inherits="challenge3.Page3" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
-
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
-</asp:Content>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        dek8v5_challenge2
+    </title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>CS4320 Challenge 3</h1>
+            <h4>by Dewi Endah Kharismawati (dek8v5)</h4>
+        </div>
+        <div class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Properties</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="success">
+                    <td>First Name</td>
+                    <td runat="server" id="fNameData" />
+                  </tr>
+                  <tr class="danger">
+                    <td>Last Name</td>
+                    <td runat="server" id="lNameData" />
+                  </tr>
+                  <tr class="warning">
+                    <td>City</td>
+                    <td runat="server" id="cityData" />
+                  </tr>
+                  <tr class="success">
+                    <td>State</td>
+                    <td runat="server" id="stateData" />
+                  </tr>
+                  <tr class="danger">
+                    <td>Age</td>
+                    <td runat="server" id="ageData" />
+                  </tr>
+                  <tr class="warning">
+                    <td>Phone Number</td>
+                    <td runat="server" id="phoneData" />
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </body>
+</html>

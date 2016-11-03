@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Page 1" Language="C#" AutoEventWireup="true" CodeFile="Page1.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="Page 1" Language="C#" AutoEventWireup="true" CodeFile="Page1.aspx.cs" Inherits="challenge3.Page1" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,11 +6,7 @@
     <title>
         dek8v5_challenge2
     </title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     </head>
     <body>
         <div class="jumbotron text-center">
@@ -62,7 +58,7 @@
                 </div>
             </div>
             <div>
-                <asp:Button runat="server" ID="submitButton" Text="Page 2" PostBackUrl="~/About.aspx" CssClass= "btn btn-primary"/>
+                <asp:Button runat="server" ID="submitBtn" Text="Page 2" PostBackUrl="Page2.aspx" CssClass= "btn btn-primary"/>
             </div>
         </form>
     </div>
